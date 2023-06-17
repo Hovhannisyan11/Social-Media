@@ -1,0 +1,525 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav {
+  width: 100%;
+  background-color: #4D636F;
+}
+nav .ul_1 {
+  list-style: none;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+nav .ul_1 li {
+  padding: 20px;
+  font-size: 20px;
+}
+nav .ul_1 .div_li {
+  display: flex;
+}
+nav .ul_1 .div_li li:nth-child(1) {
+  background-color: #3A4B53;
+}
+nav .ul_1 .div_li li:hover {
+  background-color: #DDDDDD;
+  color: black;
+  cursor: pointer;
+}
+nav .ul_1 .div_li li:nth-child(5) span {
+  color: white;
+  font-size: 13px;
+  border-radius: 50%;
+  background-color: green;
+  padding: 0px 5px 0px 5px;
+  position: absolute;
+}
+nav .ul_1 .div_li li:nth-child(5) .sms {
+  position: absolute;
+  left: 280px;
+  top: 68px;
+  display: none;
+}
+nav .ul_1 .div_li li:nth-child(5) .sms .ul_2 {
+  list-style: none;
+}
+nav .ul_1 .div_li li:nth-child(5) .sms .ul_2 li {
+  font-size: 15px;
+  background-color: white;
+  color: black;
+}
+nav .ul_1 .div_li li:nth-child(5) .sms .ul_2 li:hover {
+  background-color: grey;
+  color: white;
+}
+nav .ul_1 .div_li li:nth-child(5):hover .sms {
+  display: block;
+}
+nav .ul_1 .div_li2 {
+  display: flex;
+}
+nav .ul_1 .div_li2 li:nth-last-child(1) {
+  display: none;
+}
+nav .ul_1 .div_li2 li:hover {
+  background-color: #DDDDDD;
+  color: black;
+  cursor: pointer;
+}
+@media only screen and (max-width: 406px) {
+  nav .ul_1 .div_li li:nth-child(2) {
+    display: none;
+  }
+  nav .ul_1 .div_li li:nth-child(3) {
+    display: none;
+  }
+  nav .ul_1 .div_li li:nth-child(4) {
+    display: none;
+  }
+  nav .ul_1 .div_li li:nth-child(5) {
+    display: none;
+  }
+  nav .ul_1 .div_li2 li:nth-last-child(1) {
+    display: block;
+  }
+  nav .ul_1 .div_li2 li:nth-last-child(2) {
+    display: none;
+  }
+}
+
+.drop_down {
+  width: 100%;
+  background-color: #4D636F;
+  display: none;
+}
+.drop_down ul {
+  list-style: none;
+}
+.drop_down ul li {
+  padding: 10px;
+  color: white;
+}
+.drop_down ul li:hover {
+  background-color: #DDDDDD;
+  color: black;
+}
+
+main {
+  width: 100%;
+  background-color: #F5F7F8;
+  display: flex;
+  justify-content: center;
+  padding-top: 25px;
+  padding-bottom: 30px;
+}
+main .main_in {
+  width: 92%;
+  display: flex;
+  justify-content: space-between;
+}
+main .main_in .b {
+  width: 20%;
+}
+main .main_in .left_block {
+  width: 27%;
+}
+main .main_in .left_block .left_myprofile {
+  width: 100%;
+  padding: 10px;
+  box-shadow: 0px 1px 10px grey;
+  border-radius: 10px;
+}
+main .main_in .left_block .left_myprofile .img {
+  text-align: center;
+  border-bottom: 1px solid #DDDDDD;
+  height: 190px;
+  line-height: 50px;
+}
+main .main_in .left_block .left_myprofile .img img {
+  width: 25%;
+  height: 100px;
+  border-radius: 50%;
+}
+main .main_in .left_block .left_myprofile .img_under {
+  line-height: 30px;
+}
+main .main_in .left_block .left_myprofile .img_under p i {
+  color: #4D636F;
+}
+main .main_in .left_block .my {
+  width: 100%;
+  margin-top: 20px;
+  background-color: #7D97A5;
+  border-radius: 10px;
+  box-shadow: 0px 1px 10px grey;
+}
+main .main_in .left_block .my p {
+  padding: 10px;
+}
+main .main_in .left_block .my p a {
+  color: white;
+  text-decoration: none;
+}
+main .main_in .left_block .my p:hover {
+  background-color: #DDDDDD;
+  color: black;
+  cursor: pointer;
+}
+main .main_in .left_block .my p:hover a:hover {
+  color: black;
+}
+main .main_in .left_block .interest {
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0px 1px 10px grey;
+}
+main .main_in .left_block .interest span {
+  color: white;
+  padding: 0px 10px 0px 10px;
+  line-height: 30px;
+}
+main .main_in .left_block .hey {
+  width: 100%;
+  background-color: #DFE5E8;
+  border-radius: 10px;
+  margin-top: 20px;
+  padding: 10px;
+}
+main .main_in .left_block .hey .x {
+  background-color: #BECBD2;
+  width: 40px;
+  text-align: center;
+  float: right;
+  cursor: pointer;
+}
+main .main_in .left_block .hey .x:hover {
+  background-color: #DDDDDD;
+}
+main .main_in .left_block .images {
+  width: 100%;
+  text-align: center;
+  padding-top: 10px;
+  box-shadow: 0px 1px 10px grey;
+  display: none;
+  background-color: white;
+}
+main .main_in .left_block .images img {
+  width: 40%;
+}
+main .main_in .middle_block {
+  width: 54%;
+}
+main .main_in .middle_block .status {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 1px 10px grey;
+}
+main .main_in .middle_block .status h3 {
+  color: #616161;
+  line-height: 50px;
+}
+main .main_in .middle_block .status input {
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  font-size: 17px;
+}
+main .main_in .middle_block .status button {
+  background-color: #4D636F;
+  color: white;
+  border: none;
+  padding: 10px 20px 10px 20px;
+  font-size: 15px;
+}
+main .main_in .middle_block .status button i {
+  margin-right: 10px;
+}
+main .main_in .middle_block .status button:hover {
+  background-color: #DDDDDD;
+  color: black;
+  cursor: pointer;
+}
+main .main_in .middle_block .john_doe {
+  width: 100%;
+  margin-top: 20px;
+  box-shadow: 0px 1px 10px grey;
+  padding: 10px;
+  border-radius: 10px;
+}
+main .main_in .middle_block .john_doe .john_doe_profile {
+  width: 100%;
+  height: 100px;
+  border-bottom: 1px solid #DDDDDD;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+}
+main .main_in .middle_block .john_doe .john_doe_profile .john_img {
+  display: flex;
+  align-items: center;
+  width: 60%;
+}
+main .main_in .middle_block .john_doe .john_doe_profile .john_img img {
+  width: 15%;
+  border-radius: 50%;
+}
+main .main_in .middle_block .john_doe .john_doe_profile .john_img span {
+  margin-left: 10px;
+}
+main .main_in .middle_block .john_doe .like_comment_1 {
+  width: 100%;
+}
+main .main_in .middle_block .john_doe .like_comment_1 p {
+  margin-top: 10px;
+}
+main .main_in .middle_block .john_doe .like_comment_1 div {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+main .main_in .middle_block .john_doe .like_comment_1 div img {
+  width: 48%;
+}
+main .main_in .middle_block .john_doe .like_comment_1 button {
+  padding: 18px;
+  cursor: pointer;
+  margin-top: 20px;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+main .main_in .middle_block .john_doe .like_comment_1 .btn_1 {
+  background-color: #57707D;
+}
+main .main_in .middle_block .john_doe .like_comment_1 .btn_2 {
+  background-color: #4D636F;
+}
+main .main_in .middle_block .john_doe .like_comment_1 button:hover {
+  background-color: #DDDDDD;
+  color: black;
+}
+main .main_in .middle_block .jane_doe {
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 20px;
+  box-shadow: 0px 1px 10px grey;
+  padding: 10px;
+}
+main .main_in .middle_block .jane_doe .jane_profile {
+  width: 100%;
+  height: 100px;
+  border-bottom: 1px solid #DDDDDD;
+  display: flex;
+  justify-content: space-between;
+}
+main .main_in .middle_block .jane_doe .jane_profile .jane_img {
+  display: flex;
+  align-items: center;
+  width: 60%;
+}
+main .main_in .middle_block .jane_doe .jane_profile .jane_img img {
+  width: 15%;
+  border-radius: 50%;
+}
+main .main_in .middle_block .jane_doe .jane_profile .jane_img span {
+  margin-left: 10px;
+}
+main .main_in .middle_block .jane_doe .like_comment_1 {
+  width: 100%;
+}
+main .main_in .middle_block .jane_doe .like_comment_1 p {
+  margin-top: 10px;
+}
+main .main_in .middle_block .jane_doe .like_comment_1 button {
+  padding: 18px;
+  cursor: pointer;
+  margin-top: 20px;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+main .main_in .middle_block .jane_doe .like_comment_1 .btn_1 {
+  background-color: #57707D;
+}
+main .main_in .middle_block .jane_doe .like_comment_1 .btn_2 {
+  background-color: #4D636F;
+}
+main .main_in .middle_block .jane_doe .like_comment_1 button:hover {
+  background-color: #DDDDDD;
+  color: black;
+}
+main .main_in .middle_block .angie_doe {
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 20px;
+  box-shadow: 0px 1px 10px grey;
+  padding: 10px;
+}
+main .main_in .middle_block .angie_doe .angie_profile {
+  width: 100%;
+  height: 100px;
+  border-bottom: 1px solid #DDDDDD;
+  display: flex;
+  justify-content: space-between;
+}
+main .main_in .middle_block .angie_doe .angie_profile .angie_img {
+  display: flex;
+  align-items: center;
+  width: 60%;
+}
+main .main_in .middle_block .angie_doe .angie_profile .angie_img img {
+  width: 15%;
+  border-radius: 50%;
+}
+main .main_in .middle_block .angie_doe .angie_profile .angie_img span {
+  margin-left: 10px;
+}
+main .main_in .middle_block .angie_doe p {
+  margin-top: 20px;
+}
+main .main_in .middle_block .angie_doe img {
+  width: 100%;
+  margin-top: 20px;
+}
+main .main_in .middle_block .angie_doe .like_comment_1 button {
+  padding: 18px;
+  cursor: pointer;
+  margin-top: 20px;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+main .main_in .middle_block .angie_doe .like_comment_1 .btn_1 {
+  background-color: #57707D;
+}
+main .main_in .middle_block .angie_doe .like_comment_1 .btn_2 {
+  background-color: #4D636F;
+}
+main .main_in .middle_block .angie_doe .like_comment_1 button:hover {
+  background-color: #DDDDDD;
+  color: black;
+}
+main .main_in .right_block {
+  width: 17%;
+}
+main .main_in .right_block .events {
+  width: 100%;
+  text-align: center;
+  line-height: 40px;
+  box-shadow: 0px 1px 10px grey;
+  border-radius: 10px;
+  padding: 10px;
+}
+main .main_in .right_block .events img {
+  width: 100%;
+  padding: 10px;
+}
+main .main_in .right_block .events button {
+  width: 100%;
+  height: 40px;
+  background-color: #DFE5E8;
+  border: none;
+  cursor: pointer;
+}
+main .main_in .right_block .events button:hover {
+  background-color: #DDDDDD;
+}
+main .main_in .right_block .friend {
+  width: 100%;
+  margin-top: 20px;
+  text-align: center;
+  padding: 10px;
+  line-height: 50px;
+  position: relative;
+  box-shadow: 0px 1px 10px grey;
+  border-radius: 10px;
+}
+main .main_in .right_block .friend div {
+  line-height: 20px;
+}
+main .main_in .right_block .friend div img {
+  width: 50%;
+}
+main .main_in .right_block .friend .btn_div {
+  width: 100%;
+}
+main .main_in .right_block .friend .btn_div button {
+  width: 48%;
+  height: 35px;
+  border: none;
+  margin-top: 20px;
+  cursor: pointer;
+  color: white;
+}
+main .main_in .right_block .friend .btn_div .button_1 {
+  background-color: #94CF96;
+}
+main .main_in .right_block .friend .btn_div .button_2 {
+  background-color: #F88E86;
+}
+main .main_in .right_block .friend .btn_div button:hover {
+  background-color: #DDDDDD;
+  color: black;
+}
+main .main_in .right_block .ads {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 10px 40px 10px;
+  box-shadow: 0px 1px 10px grey;
+  border-radius: 10px;
+}
+main .main_in .right_block .final {
+  width: 100%;
+  margin-top: 20px;
+  padding: 50px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0px 1px 10px grey;
+}
+main .main_in .right_block .final i {
+  font-size: 50px;
+}
+@media only screen and (max-width: 800px) {
+  main .main_in {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  main .main_in .left_block {
+    width: 100%;
+  }
+  main .main_in .middle_block {
+    width: 100%;
+  }
+  main .main_in .middle_block .status {
+    margin-top: 20px;
+  }
+  main .main_in .right_block {
+    width: 100%;
+  }
+}
+
+footer {
+  background-color: #435761;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: white;
+  font-size: 25px;
+  padding-left: 10px;
+}
+
+.f_2 {
+  background-color: #303E45;
+}/*# sourceMappingURL=style.css.map */
